@@ -1,0 +1,15 @@
+{
+  "name": "jun4-3",
+  "description": "jun detail 4 3",
+  "image": "https://gateway.pinata.cloud/ipfs/QmaUQkY7ZV1rVSG7S6beYkmbSYNEe8getmzMT6EZNokYbu/4/wa4-3.jpeg",
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": 4
+    },
+    {
+      "trait_type": "Type",
+      "value": 3
+    }
+  ]
+}

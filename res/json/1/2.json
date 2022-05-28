@@ -1,0 +1,15 @@
+{
+  "name": "jun1-2",
+  "description": "jun detail 1 2",
+  "image": "https://gateway.pinata.cloud/ipfs/QmaUQkY7ZV1rVSG7S6beYkmbSYNEe8getmzMT6EZNokYbu/1/wa1-2.jpeg",
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": 1
+    },
+    {
+      "trait_type": "Type",
+      "value": 2
+    }
+  ]
+}
