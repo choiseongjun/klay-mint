@@ -38,7 +38,7 @@ const Home: NextPage = () => {
             alignItems="center"
             direction="column"
         >
-            <Text mb={4}>Remaining GemZ : {remainGemTokens}</Text>
+            <Text mb={4}>남은 민팅 개수 : {remainGemTokens}</Text>
 
 
             <Button colorScheme="pink" onClick={onOpen}>
