@@ -11,7 +11,7 @@ export const MINT_GEM_TOKEN_ABI:AbiItem[]=[
                 "internalType": "string",
                 "name": "_name",
                 "type": "string"
-            },
+            }, 
             {
                 "internalType": "string",
                 "name": "_symbol",
