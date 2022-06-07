@@ -4,7 +4,7 @@ import {
     MINT_GEM_TOKEN_ABI,
     MINT_GEM_TOKEN_ADDRESS,
     SALE_GEM_TOKEN_ABI,
-    SALE_GEM_TOKEN_ADDRESS,
+    SALE_GEM_TOKEN_ADDRESS
 } from "../public/caverConfig";
 import {GemTokenMetadata} from "../interface";
 import axios from "axios";
@@ -66,10 +66,10 @@ export const useMetadata = () => {
 
     const getMetadata = async (gemTokenRank: string, gemTokenType: string) => {
         try {
+
             const response = await axios.get(
                 `${process.env.NEXT_PUBLIC_METADATA_URI}/${gemTokenRank}/${gemTokenType}.json`
             );
-
             setMetadataURI(response.data);
         } catch (error) {
             console.error(error);

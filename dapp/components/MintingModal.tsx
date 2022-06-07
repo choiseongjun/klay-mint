@@ -47,17 +47,18 @@ const MintingModal: FC<MintingModalProps> = ({ isOpen, onClose,getRemainGemToken
                 data: mintGemTokenContract.methods.mintGemToken().encodeABI(),
             });
             if (response.status) {
+
                 const latestMintedGemToken: GemTokenData = await saleGemTokenContract.methods
                     .getLatestMintedGemToken(account)
                     .call();
-
+                console.log("latestMintedGemToken=",latestMintedGemToken);
                 getMetadata(
                     latestMintedGemToken.gemTokenRank,
                     latestMintedGemToken.gemTokenType
                 );
                 getRemainGemTokens();
             }
-            console.log(response);
+
         } catch (error) {
             console.error(error);
         }

@@ -17,6 +17,152 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getGemTokenInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenOwner",
+						"type": "address"
+					}
+				],
+				"name": "getGemTokens",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "gemTokenRank",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "gemTokenType",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SaleGemToken.GemTokenData[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenOwner",
+						"type": "address"
+					}
+				],
+				"name": "getLatestMintedGemToken",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "gemTokenRank",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "gemTokenType",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SaleGemToken.GemTokenData",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSaleGemTokens",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "gemTokenRank",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "gemTokenType",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SaleGemToken.GemTokenData[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "mintGemToken",
 				"outputs": [
@@ -46,6 +192,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "purchaseGemToken",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -210,19 +369,18 @@
 			]
 		},
 		"MintGemToken.sol": {
-			"keccak256": "0x39ed048b7d8f054b46590c1bf99d4e227b2461adefaa7e7104fe0390a2d896fc",
-			"license": "MIT",
+			"keccak256": "0xe7e6aabe7854ad9c07e2e67424c78b36bf17cdd75dd55ab18e0649d33fc19e6a",
 			"urls": [
-				"bzz-raw://0f0ef8b8e14f1a23ed28c8dbdfd084dbf903cf352ddaf5ea7fb698399e3ea308",
-				"dweb:/ipfs/Qmbai7XZRZEzh1EGKU2D2RL8tVdYVgMnSvdwYYfkQegDMH"
+				"bzz-raw://71a3ee1bba86abba669eefe19efa8ce16b09eb7c27dd62135d6b2ca04369e3c6",
+				"dweb:/ipfs/QmajYpg5w5K4SsoaJuYjVmwDsNWah3q6XD43rzUAmScaDJ"
 			]
 		},
 		"SaleGemToken.sol": {
-			"keccak256": "0xdfccea1686f82efc52cff9419ac6c95e3e513573d4eb9da3d4db49db1664fda2",
+			"keccak256": "0x04871b7bdebbf69ac8c7364ed63a35b29ec3b43dc28956e08e17deb635da29ee",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://69f373f3aaee21194d684295741618f5cb9befcbebc92a107fb2e645359f0c88",
-				"dweb:/ipfs/QmRVrfiMDbFvYyAhSgLRFyzAEMVBNoLtvweK1MBYtci7Hp"
+				"bzz-raw://a64eba6f5a3b93452e211c7c55b7ee301774dd3768e4457002abf6b5d57d8ece",
+				"dweb:/ipfs/QmY5y9KmEoZKdKY3mdA6y17Kaz1sb3zMycH59jhKMQCGe3"
 			]
 		}
 	},

@@ -815,11 +815,10 @@
 			]
 		},
 		"MintGemToken.sol": {
-			"keccak256": "0x39ed048b7d8f054b46590c1bf99d4e227b2461adefaa7e7104fe0390a2d896fc",
-			"license": "MIT",
+			"keccak256": "0xe7e6aabe7854ad9c07e2e67424c78b36bf17cdd75dd55ab18e0649d33fc19e6a",
 			"urls": [
-				"bzz-raw://0f0ef8b8e14f1a23ed28c8dbdfd084dbf903cf352ddaf5ea7fb698399e3ea308",
-				"dweb:/ipfs/Qmbai7XZRZEzh1EGKU2D2RL8tVdYVgMnSvdwYYfkQegDMH"
+				"bzz-raw://71a3ee1bba86abba669eefe19efa8ce16b09eb7c27dd62135d6b2ca04369e3c6",
+				"dweb:/ipfs/QmajYpg5w5K4SsoaJuYjVmwDsNWah3q6XD43rzUAmScaDJ"
 			]
 		}
 	},

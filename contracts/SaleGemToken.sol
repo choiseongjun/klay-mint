@@ -14,11 +14,11 @@ contract SaleGemToken {
     mapping(uint => uint) public tokenPrices;
 
     uint[] public onSaleTokens;
-
+  
     struct GemTokenData {
         uint tokenId;
         uint gemTokenRank;
-        uint gemTokenType;
+        uint gemTokenType; 
         uint tokenPrice;
     }
     function setForSaleGemToken(uint _tokenId, uint _price) public {

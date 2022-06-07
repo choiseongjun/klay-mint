@@ -1,7 +1,7 @@
 {
-  "name": "jun2-1",
-  "description": "jun detail 2 1",
-  "image": "https://gateway.pinata.cloud/ipfs/QmaUQkY7ZV1rVSG7S6beYkmbSYNEe8getmzMT6EZNokYbu/2/wa2-1.jpeg",
+  "name": "The Art of Seasons",
+  "description": "Season's Art",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmefe3MVZxSJN82oTzh8apDQ3D51rm2dAZ5EronahNKSPw/2/b3.png",
   "attributes": [
     {
       "trait_type": "Rank",
@@ -9,7 +9,7 @@
     },
     {
       "trait_type": "Type",
-      "value": 1
+      "value": 3
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "name": "jun3-3",
-  "description": "jun detail 3 3",
-  "image": "https://gateway.pinata.cloud/ipfs/QmaUQkY7ZV1rVSG7S6beYkmbSYNEe8getmzMT6EZNokYbu/3/wa3-3.jpeg",
+  "name": "Mutant Ape Yacht Club #1077",
+  "description": "The MUTANT APE YACHT CLUB is a collection of up to 20,000 Mutant Apes.",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmefe3MVZxSJN82oTzh8apDQ3D51rm2dAZ5EronahNKSPw/3/b9.png",
   "attributes": [
     {
       "trait_type": "Rank",
@@ -9,7 +9,7 @@
     },
     {
       "trait_type": "Type",
-      "value": 3
+      "value": 9
     }
   ]
 }

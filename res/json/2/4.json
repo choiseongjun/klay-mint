@@ -1,7 +1,7 @@
 {
-  "name": "jun2-4",
-  "description": "jun detail 2 4",
-  "image": "https://gateway.pinata.cloud/ipfs/QmaUQkY7ZV1rVSG7S6beYkmbSYNEe8getmzMT6EZNokYbu/2/wa2-4.jpeg",
+  "name": "Vandal City #4231",
+  "description": "Vandal City is a lifestyle brand and blockchain gaming project",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmefe3MVZxSJN82oTzh8apDQ3D51rm2dAZ5EronahNKSPw/2/b6.png",
   "attributes": [
     {
       "trait_type": "Rank",
@@ -9,7 +9,7 @@
     },
     {
       "trait_type": "Type",
-      "value": 4
+      "value": 6
     }
   ]
 }

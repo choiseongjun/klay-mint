@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.7;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
@@ -6,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract MintGemToken is ERC721Enumerable,Ownable {
 
-    uint constant public MAX_TOKEN_COUNT = 100;
+    uint constant public MAX_TOKEN_COUNT = 1000;
     uint constant public TOKEN_RANK_LENGTH = 4;
     uint constant public TOKEN_TYPE_LENGTH = 4;
     string public metadataURI;
@@ -17,8 +19,8 @@ contract MintGemToken is ERC721Enumerable,Ownable {
     }
 
     struct GemTokenData {
-        uint gemTokenRank; 
-        uint gemTokenType; 
+        uint gemTokenRank;
+        uint gemTokenType;
     }
     mapping(uint => GemTokenData) public gemTokenData;
     uint[TOKEN_RANK_LENGTH][TOKEN_TYPE_LENGTH] public gemTokenCount;
@@ -29,7 +31,7 @@ contract MintGemToken is ERC721Enumerable,Ownable {
 
         return string(abi.encodePacked(metadataURI, '/', gemTokenRank, '/', gemTokenType, '.json'));
     }
-    function mintGemToken() public payable{
+    function mintGemToken() public  payable{
         require(gemTokenPrice <= msg.value, "Not enough Klay.");
         uint tokenId = totalSupply() + 1;
         GemTokenData memory randomTokenData = randomGenerator(msg.sender, tokenId);
@@ -57,32 +59,32 @@ contract MintGemToken is ERC721Enumerable,Ownable {
         if (randomNum < 41) {
             if (randomNum <11) {
                 randomTokenData.gemTokenRank = 3;
-                randomTokenData.gemTokenType = 1;
-            } else if (randomNum < 21) {
+                randomTokenData.gemTokenType = 7;
+            } else if (randomNum <21) {
                 randomTokenData.gemTokenRank = 3;
-                randomTokenData.gemTokenType = 2;
-            } else if (randomNum < 31) {
+                randomTokenData.gemTokenType = 8;
+            } else if (randomNum <31) {
                 randomTokenData.gemTokenRank = 3;
-                randomTokenData.gemTokenType = 3;
+                randomTokenData.gemTokenType = 9;
             } else {
                 randomTokenData.gemTokenRank = 3;
-                randomTokenData.gemTokenType = 4;
+                randomTokenData.gemTokenType = 10;
             }
         } else if (randomNum < 81) {
             if (randomNum < 51) {
                 randomTokenData.gemTokenRank = 2;
-                randomTokenData.gemTokenType = 1;
-            } else if (randomNum < 61) {
-                randomTokenData.gemTokenRank = 2; 
-                randomTokenData.gemTokenType = 2;
-            } else if (randomNum < 71 ){
-                randomTokenData.gemTokenRank = 2;
                 randomTokenData.gemTokenType = 3;
-            } else {
+            } else if (randomNum < 61) {
                 randomTokenData.gemTokenRank = 2;
                 randomTokenData.gemTokenType = 4;
+            } else if (randomNum < 71) {
+                randomTokenData.gemTokenRank = 2;
+                randomTokenData.gemTokenType = 5;
+            } else {
+                randomTokenData.gemTokenRank = 2;
+                randomTokenData.gemTokenType = 6;
             }
-        } else {
+        }  else {
             if (randomNum < 91) {
                 randomTokenData.gemTokenRank = 1;
                 randomTokenData.gemTokenType = 1;
@@ -92,6 +94,6 @@ contract MintGemToken is ERC721Enumerable,Ownable {
             }
         }
 
-    return randomTokenData;
+        return randomTokenData;
     }
 }

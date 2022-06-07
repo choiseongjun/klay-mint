@@ -1,7 +1,7 @@
 {
-  "name": "jun2-2",
-  "description": "jun detail 2 2",
-  "image": "https://gateway.pinata.cloud/ipfs/QmaUQkY7ZV1rVSG7S6beYkmbSYNEe8getmzMT6EZNokYbu/2/wa2-2.jpeg",
+  "name": "goblintown #3313",
+  "description": "AAAAAAAUUUUUGGGHHHHH gobblins goblinns",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmefe3MVZxSJN82oTzh8apDQ3D51rm2dAZ5EronahNKSPw/2/b4.png",
   "attributes": [
     {
       "trait_type": "Rank",
@@ -9,7 +9,7 @@
     },
     {
       "trait_type": "Type",
-      "value": 2
+      "value": 4
     }
   ]
 }
