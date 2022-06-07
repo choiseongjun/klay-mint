@@ -51,7 +51,6 @@ const MintingModal: FC<MintingModalProps> = ({ isOpen, onClose,getRemainGemToken
                 const latestMintedGemToken: GemTokenData = await saleGemTokenContract.methods
                     .getLatestMintedGemToken(account)
                     .call();
-                console.log("latestMintedGemToken=",latestMintedGemToken);
                 getMetadata(
                     latestMintedGemToken.gemTokenRank,
                     latestMintedGemToken.gemTokenType

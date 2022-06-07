@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
             const response = await mintGemTokenContract.methods.totalSupply().call();
 
-            setRemainGemTokens(1000 - parseInt(response, 10));
+            setRemainGemTokens(100 - parseInt(response, 10));
         } catch (error) {
             console.error(error);
         }
